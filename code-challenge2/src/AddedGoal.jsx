@@ -29,7 +29,7 @@ function AddGoalForm({ onAdd }) {
       <input placeholder="Goal name" value={name} onChange={e => setName(e.target.value)} required />
       <input type="number" placeholder="Target amount" value={target} onChange={e => setTarget(e.target.value)} required />
       <input placeholder="Category" value={category} onChange={e => setCategory(e.target.value)} required />
-      <input type="date" value={deadline} onChange={e => setDeadline(e.target.value)} required />
+      <input type="text" placeholder="Deadline (YYYY-MM-DD)" value={deadline} onChange={e => setDeadline(e.target.value)} required />
       <button type="submit">Add</button>
     </form>
   );
